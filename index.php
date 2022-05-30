@@ -27,6 +27,7 @@ if(!(isset($_SESSION["usuario"]))){
         header("location: http://localhost/semana13/Cliente/");
         //require_once("login.php");
     }else{
+        //creamos las bases para las vistas por URL
         if($url[0]=="registro"){
             require_once("vistas/login/registro.php");
         }else if($url[0]=="registro_login"){
