@@ -18,6 +18,7 @@ require_once("clases/cls_empleados.php");
 <?php
 
 if(!(isset($_SESSION["usuario"]))){
+    //optenemos la URL
     $url=isset($_GET["url"])? $_GET["url"]:null;
     $url=rtrim($url,"/");
     $url=explode('/',$url);
